@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: "Red Isapres",
   },
   description:
-    "Planes de Isapre: Colena, Banmédica, Consalud, Esencial, Más Vida y Vida Trés. Te ofrecemos las más conveniente, mejor salud por el mismo 7%",
+    "Planes de Isapre: Colmena, Banmédica, Consalud, Esencial, Más Vida y Vida Trés. Te ofrecemos las más conveniente, mejor salud por el mismo 7%",
 };
 
 export default function RootLayout({
