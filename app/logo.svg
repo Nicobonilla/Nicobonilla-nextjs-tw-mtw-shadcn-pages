@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-41f72911-8186-4758-8cf1-f7c14c3d40bd" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4000 4000">
+  <defs>
+    <style>
+      .uuid-2d1e6ce6-eda1-4152-b6dd-0f81c6e3a47c {
+        fill: url(#uuid-6f607bd8-bb65-481e-a0a8-9aac815cd94e);
+      }
+
+      .uuid-2d1e6ce6-eda1-4152-b6dd-0f81c6e3a47c, .uuid-b8edc5b0-fba5-442e-84e6-148cf7965a61, .uuid-d62fe27e-18c3-4427-a4b0-f814a0872f1d, .uuid-8c9341c4-3435-4bd0-a578-995f592a91e7, .uuid-ecfb7135-5d73-48c0-b9f8-1a0e3d25dc88, .uuid-212c16c0-7244-440a-9106-243b64e3110f, .uuid-383796e1-ef21-4d9c-8695-60ec70fd5e3a, .uuid-14e0ddcd-2bf3-46d1-92e9-2be396abee72, .uuid-41ff3b41-11ca-4d22-8ed5-0e6de30a913f, .uuid-ed2f276c-b756-4a0c-b0d9-38c55b568fc3, .uuid-acfa4f5d-5ec0-4ace-924f-e675883318df, .uuid-b64efeb2-c3e2-460d-99e0-6c7577e2e8aa, .uuid-e096a956-3b6a-4a86-a310-300538583f86 {
+        stroke-width: 0px;
+      }
+
+      .uuid-2d1e6ce6-eda1-4152-b6dd-0f81c6e3a47c, .uuid-b8edc5b0-fba5-442e-84e6-148cf7965a61, .uuid-d62fe27e-18c3-4427-a4b0-f814a0872f1d, .uuid-8c9341c4-3435-4bd0-a578-995f592a91e7, .uuid-212c16c0-7244-440a-9106-243b64e3110f, .uuid-383796e1-ef21-4d9c-8695-60ec70fd5e3a, .uuid-14e0ddcd-2bf3-46d1-92e9-2be396abee72, .uuid-41ff3b41-11ca-4d22-8ed5-0e6de30a913f, .uuid-ed2f276c-b756-4a0c-b0d9-38c55b568fc3, .uuid-acfa4f5d-5ec0-4ace-924f-e675883318df, .uuid-b64efeb2-c3e2-460d-99e0-6c7577e2e8aa, .uuid-e096a956-3b6a-4a86-a310-300538583f86 {
+        fill-rule: evenodd;
+      }
+
+      .uuid-b8edc5b0-fba5-442e-84e6-148cf7965a61 {
+        fill: url(#uuid-5f66a3b9-3dbe-41b7-a9e1-afaf7512ed88);
+      }
+
+      .uuid-d62fe27e-18c3-4427-a4b0-f814a0872f1d {
+        fill: url(#uuid-22d3b533-8a35-46b7-9511-70d811d805e2);
+      }
+
+      .uuid-8c9341c4-3435-4bd0-a578-995f592a91e7 {
+        fill: url(#uuid-0f56c1db-b7ef-44f9-88a4-e903ad45a779);
+      }
+
+      .uuid-ecfb7135-5d73-48c0-b9f8-1a0e3d25dc88 {
+        fill: #000300;
+      }
+
+      .uuid-212c16c0-7244-440a-9106-243b64e3110f {
+        fill: url(#uuid-218360ca-ec5a-468a-88d3-2817f270d96a);
+      }
+
+      .uuid-383796e1-ef21-4d9c-8695-60ec70fd5e3a {
+        fill: url(#uuid-51435a58-5ffc-4aca-b70d-119bfa0abdf0);
+      }
+
+      .uuid-14e0ddcd-2bf3-46d1-92e9-2be396abee72 {
+        fill: url(#uuid-51d97524-6afc-4bc9-a28b-3030c76ec1c6);
+      }
+
+      .uuid-41ff3b41-11ca-4d22-8ed5-0e6de30a913f {
+        fill: url(#uuid-25f7d4bf-2947-4385-b773-5840b622c84e);
+      }
+
+      .uuid-ed2f276c-b756-4a0c-b0d9-38c55b568fc3 {
+        fill: url(#uuid-2e94835d-413e-47c2-a830-8da1b433f846);
+      }
+
+      .uuid-acfa4f5d-5ec0-4ace-924f-e675883318df {
+        fill: url(#uuid-622eda91-3786-49fc-98a6-adb9468ad487);
+      }
+
+      .uuid-b64efeb2-c3e2-460d-99e0-6c7577e2e8aa {
+        fill: url(#uuid-5cde86ec-9b3a-4fe1-ac20-fd00a87f71a9);
+      }
+
+      .uuid-e096a956-3b6a-4a86-a310-300538583f86 {
+        fill: url(#uuid-935e2dd3-960a-4207-8896-4913a9fd4005);
+      }
+    </style>
+    <radialGradient id="uuid-22d3b533-8a35-46b7-9511-70d811d805e2" data-name="New Gradient green" cx="2621.56" cy="1796.95" fx="2621.56" fy="1796.95" r="603.45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d3ff3f"/>
+      <stop offset="1" stop-color="#3d8700"/>
+    </radialGradient>
+    <radialGradient id="uuid-2e94835d-413e-47c2-a830-8da1b433f846" cx="3109" cy="1501" fx="3109" fy="1501" r="712.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d3ff3f"/>
+      <stop offset="1" stop-color="#3d8700"/>
+    </radialGradient>
+    <radialGradient id="uuid-935e2dd3-960a-4207-8896-4913a9fd4005" cx="2085" cy="1301" fx="2085" fy="1301" r="1068.07" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8ff2a"/>
+      <stop offset=".4" stop-color="#e55500"/>
+      <stop offset="1" stop-color="#bf5500"/>
+    </radialGradient>
+    <radialGradient id="uuid-218360ca-ec5a-468a-88d3-2817f270d96a" cx="2105" cy="737" fx="2105" fy="737" r="874.72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8ff2a"/>
+      <stop offset="1" stop-color="#e55500"/>
+      <stop offset="1" stop-color="#bf5500"/>
+    </radialGradient>
+    <radialGradient id="uuid-25f7d4bf-2947-4385-b773-5840b622c84e" cx="1413" cy="1545" fx="1413" fy="1545" r="505.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff1c00"/>
+      <stop offset="1" stop-color="#3f0100"/>
+    </radialGradient>
+    <radialGradient id="uuid-51435a58-5ffc-4aca-b70d-119bfa0abdf0" cx="1173" cy="1393" fx="1173" fy="1393" r="716.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff1c00"/>
+      <stop offset="1" stop-color="#3f0100"/>
+    </radialGradient>
+    <radialGradient id="uuid-0f56c1db-b7ef-44f9-88a4-e903ad45a779" data-name="New Gradient purple" cx="1418.7" cy="2350.8" fx="1418.7" fy="2350.8" r="449.59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a930ff"/>
+      <stop offset="1" stop-color="#3b006d"/>
+    </radialGradient>
+    <radialGradient id="uuid-5f66a3b9-3dbe-41b7-a9e1-afaf7512ed88" data-name="New Gradient purple" cx="1049" cy="2385" fx="1049" fy="2385" r="681.66" xlink:href="#uuid-0f56c1db-b7ef-44f9-88a4-e903ad45a779"/>
+    <radialGradient id="uuid-6f607bd8-bb65-481e-a0a8-9aac815cd94e" data-name="New Gradient blue" cx="1913.48" cy="2646.38" fx="1913.48" fy="2646.38" r="449.47" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00c2f0"/>
+      <stop offset="1" stop-color="#1a3b6e"/>
+    </radialGradient>
+    <radialGradient id="uuid-5cde86ec-9b3a-4fe1-ac20-fd00a87f71a9" data-name="New Gradient blue" cx="1849" cy="3013" fx="1849" fy="3013" r="765.88" xlink:href="#uuid-6f607bd8-bb65-481e-a0a8-9aac815cd94e"/>
+    <radialGradient id="uuid-622eda91-3786-49fc-98a6-adb9468ad487" cx="2571.17" cy="2394.58" fx="2571.17" fy="2394.58" r="446.39" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24ffe2"/>
+      <stop offset="1" stop-color="#005440"/>
+    </radialGradient>
+    <radialGradient id="uuid-51d97524-6afc-4bc9-a28b-3030c76ec1c6" cx="2853" cy="2681" fx="2853" fy="2681" r="652.34" xlink:href="#uuid-622eda91-3786-49fc-98a6-adb9468ad487"/>
+  </defs>
+  <path class="uuid-d62fe27e-18c3-4427-a4b0-f814a0872f1d" d="m2035.45,1924.21c483.77-55.99,458.8-371.16,685.21-550.83,233.8-185.55,542.58,113.38,324.97,390.3-130.87,166.4-441.11,298.94-1010.18,160.53h0Z"/>
+  <path class="uuid-ed2f276c-b756-4a0c-b0d9-38c55b568fc3" d="m2035.45,1924.21l5.93-1.51c470.51-19.15,469.05-296.02,705.77-437.4,182.33-110.41,448.45,61.86,298.48,278.37-130.87,166.4-441.11,298.94-1010.18,160.53h0Z"/>
+  <path class="uuid-e096a956-3b6a-4a86-a310-300538583f86" d="m1951.67,1928.63c192.64-446.3-92.62-581.79-133.84-868.96-42.62-294.51,369.09-413.83,499.97-85.39,77.9,195.86,38.24,530.17-366.13,954.35h0Z"/>
+  <path class="uuid-212c16c0-7244-440a-9106-243b64e3110f" d="m1951.67,1928.63l1.45-4.42c219.13-418.25-20.6-555.25-26.43-830.66-2.96-215,279.33-359.35,391.11-119.27,77.9,195.86,38.24,530.17-366.13,954.35h0Z"/>
+  <path class="uuid-41ff3b41-11ca-4d22-8ed5-0e6de30a913f" d="m1913.42,2005.17c-289.68-390.25-548.46-212.04-819-319.59-276.42-108.96-172.03-525.75,176.45-475.64,208.83,29.45,477.9,232.7,642.55,795.23h0Z"/>
+  <path class="uuid-383796e1-ef21-4d9c-8695-60ec70fd5e3a" d="m1913.42,2005.17l-2.91-4.42c-252.9-399.1-491.12-259.18-732.26-393.22-186.76-103.08-170.57-419.7,92.62-397.59,208.83,29.45,477.9,232.7,642.55,795.23h0Z"/>
+  <path class="uuid-8c9341c4-3435-4bd0-a578-995f592a91e7" d="m1960.47,2075.88c-482.27,55.93-457.24,371.1-685.22,550.77-233.75,184.09-542.53-113.38-323.46-390.25,129.37-166.46,439.66-298.98,1008.68-160.52h0Z"/>
+  <path class="uuid-b8edc5b0-fba5-442e-84e6-148cf7965a61" d="m1960.47,2075.88h-5.84c-470.56,20.6-469.1,296.01-704.36,438.85-183.8,110.46-449.96-61.87-298.49-278.33,129.37-166.46,439.66-298.98,1008.68-160.52h0Z"/>
+  <path class="uuid-2d1e6ce6-eda1-4152-b6dd-0f81c6e3a47c" d="m2045.76,2069.94c-194.05,447.75,91.16,583.25,132.32,870.42,44.13,294.51-369.04,413.82-499.91,85.38-77.95-195.86-38.25-531.62,367.59-955.8h0Z"/>
+  <path class="uuid-b64efeb2-c3e2-460d-99e0-6c7577e2e8aa" d="m2045.76,2069.94l-2.92,5.94c-219.07,418.24,20.56,555.19,26.49,830.6,4.37,215-277.93,359.35-391.16,119.26-77.95-195.86-38.25-531.62,367.59-955.8h0Z"/>
+  <path class="uuid-acfa4f5d-5ec0-4ace-924f-e675883318df" d="m2082.54,1994.86c289.64,390.25,549.92,210.58,819,318.13,276.42,110.41,173.49,527.2-175,477.15-210.23-29.45-479.3-232.7-644-795.28h0Z"/>
+  <path class="uuid-14e0ddcd-2bf3-46d1-92e9-2be396abee72" d="m2082.54,1994.86l2.91,4.42c252.95,399.1,491.12,259.18,732.26,393.22,186.76,103.08,170.57,419.7-91.17,397.64-210.23-29.45-479.3-232.7-644-795.28h0Z"/>
+</svg>

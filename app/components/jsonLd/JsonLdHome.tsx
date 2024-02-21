@@ -20,9 +20,11 @@ export default function JsonLdHome({
   };
 
   return (
-    <script type="application/ld+json">
-      {JSON.stringify(jsonLd)}
+    <>
+    <script type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
       {children}
-    </script>
+    </>
   );
 }

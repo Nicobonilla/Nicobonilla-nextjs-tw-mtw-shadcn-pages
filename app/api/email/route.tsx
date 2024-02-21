@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: my_email,
-      to: my_email,
+      to: process.env.CLIENT_EMAIL,
       subject: `Red Isapres: ${nombre} RI: ${rentaImponible}`,
       html: emailHtml,
     };

@@ -7,11 +7,6 @@
 .pnp.js
 .yarn/install-state.gz
 /.env
-/public
-/app/favicon.ico
-/app/icon.ico
-/app/logo.svg
-/app/apple-icon.png
 # testing
 /coverage
 

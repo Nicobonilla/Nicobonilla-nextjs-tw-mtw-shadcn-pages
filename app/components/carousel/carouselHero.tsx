@@ -18,8 +18,8 @@ export default function CarouselHero({autoplay}: ICarousel) {
         image={"/images/family-1.jpg"}
       />
       <CarouselHeroItemIsapre
-        title={"The Beauty of Nature"}
-        description={" It is not ation from old trees, that so wonderfully changes and renews a weary spirit."}
+        title={"Tenemos Años de Experiencia"}
+        description={"Sabemos cual Isapre es la más conveniente para tí, estamos al tanto de todos los beneficios que ofrece el mercado"}
       />
       <CarouselHeroItem
         title={"Cotiza Tu Mejor Plan"}
