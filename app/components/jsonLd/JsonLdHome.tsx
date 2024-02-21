@@ -6,7 +6,7 @@ export default function JsonLdHome({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    url: "https://www.redisapres.cl/",
+    url: "www.redisapres.cl",
     name: "Red Isapres",
     description: "",
     publisher: {
