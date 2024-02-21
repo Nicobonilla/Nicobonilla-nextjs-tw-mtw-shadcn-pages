@@ -244,7 +244,7 @@ export default function ContactForm() {
               />
             </div>
             <div className="w-full justify-center items-center cursor-pointer">
-              <Button xl onClick={handleSubmit} >
+              <Button xl type='submit' >
                 COTIZAR GRATIS{" "}
               </Button>
             </div>

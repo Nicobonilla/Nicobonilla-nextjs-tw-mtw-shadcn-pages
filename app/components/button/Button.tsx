@@ -3,10 +3,11 @@ import classNames from 'classnames';
 type IButtonProps = {
   xl?: boolean;
   children: React.ReactNode;
-  onClick?: () => void | Promise<string> ; // Agregar prop para manejar el clic
+  onClick?: () => void | Promise<string>;
+  type?: "submit" | "button" | "reset"; // Add type prop
 };
 
-const Button = ({ xl, children, onClick }: IButtonProps) => {
+const Button = ({ xl, children, onClick, type = "button" }: IButtonProps) => {
   const btnClass = classNames(
     'mt-6 w-full inline-block rounded-md text-center text-white bg-primary-500 hover:bg-primary-600',
     {
@@ -15,7 +16,12 @@ const Button = ({ xl, children, onClick }: IButtonProps) => {
     }
   );
 
-  return <div className={btnClass} onClick={onClick}>{children}</div>;
+  return (
+    // Change to button element and pass the type prop
+    <button type={type} className={btnClass} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export { Button };
