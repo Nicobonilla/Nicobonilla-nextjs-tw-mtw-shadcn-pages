@@ -20,7 +20,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('wwww.redisapres.cl'),
+  metadataBase: new URL('www.redisapres.cl'),
   title: {
     absolute: "RED ISAPRES | ATENCIÓN PERSONALIZADA",
     template: "%s  |  Red Isapres",

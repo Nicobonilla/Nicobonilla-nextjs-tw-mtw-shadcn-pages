@@ -4,9 +4,9 @@ export default function JsonLdHome({
   children: React.ReactNode;
 }) {
   const jsonLd = {
-    "@context": "https://schema.org",
+    "@context": "http://schema.org",
     "@type": "WebSite",
-    url: "www.redisapres.cl",
+    url: "https://www.redisapres.cl/",
     name: "Red Isapres",
     description: "",
     publisher: {
