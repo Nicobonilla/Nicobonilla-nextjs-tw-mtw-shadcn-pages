@@ -81,7 +81,7 @@ export default function ContactForm() {
       sendEmail(formulario);
       setSubmitted(false);
       setFormulario(iniForm);
-      router.push("/informacion-isapres-chile");
+      router.push("/");
     } else {
       setErrorSubmit(true);
     }
