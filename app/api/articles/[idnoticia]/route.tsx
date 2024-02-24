@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
   
   if (idnoticia) {
     try {
-      const article:Article[] = await conn`SELECT id FROM articles WHERE idnoticia = ${idnoticia};`;
+      const article:Article[] = await conn`SELECT * FROM articles WHERE idnoticia = ${idnoticia};`;
       if (article) {
         const content = await conn`SELECT * FROM content_elements WHERE article_id = ${article[0].id} ORDER BY content_order ASC;`
         const fullArticle = { titles: article[0], content: content };
