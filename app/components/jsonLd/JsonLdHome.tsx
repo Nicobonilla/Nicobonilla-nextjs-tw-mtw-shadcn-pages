@@ -14,7 +14,7 @@ export default function JsonLdHome({
       name: "Red Isapres",
       logo: {
         "@type": "ImageObject",
-        url: "/images/logo.jpg",
+        url: "/images/logo.svg",
       },
     },
   };

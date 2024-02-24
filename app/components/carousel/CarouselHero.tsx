@@ -23,7 +23,7 @@ export default function CarouselHero({autoplay}: ICarousel) {
       />
       <CarouselHeroItem
         title={"Cotiza Tu Mejor Plan"}
-        description={"Compartenos tus datos y te contactaremos enseguida con los planes de salud ISAPRES más convenientes para ti."}
+        description={"Compartenos tus datos y te contactaremos enseguida con los planes de salud ISAPRES más convenientes para ti"}
         image={"/images/family-2.jpg"}
       />
     </Carousel>

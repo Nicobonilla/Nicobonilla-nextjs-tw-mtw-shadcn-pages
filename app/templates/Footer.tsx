@@ -90,8 +90,16 @@ const Footer = ( ) => {
             </>
           }
         >
-          <li className="mx-5">
+           <li className="mx-5">
+            <Link href="/#top">Home</Link>
           </li>{" "}
+          { 
+          // ((!pathname) || (pathname == "informacion-isapres-chile" && id_noticia)) && (
+            <li className="mx-5">
+              <Link href="/informacion-isapres-chile">Boletín</Link>
+            </li>
+          // )
+          }
         </CenteredFooter>
       </Section>
     </Background>
