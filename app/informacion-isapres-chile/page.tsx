@@ -40,7 +40,7 @@ const getResumeArticles = async () => {
 };
 
 export default async function Page() {
-  const articles = await getResumeArticles();
+  const {articles} = await getResumeArticles();
   return (
     <>
       <Section>
