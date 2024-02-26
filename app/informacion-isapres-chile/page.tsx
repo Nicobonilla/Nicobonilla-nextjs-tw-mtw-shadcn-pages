@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const getResumeArticles = async () => {
+export async function getResumeArticles(){
   try {
     const content_elements = await fetch(
       process.env.ROOT_URL_HOST + "api/resume_all_articles",
@@ -27,7 +27,9 @@ const getResumeArticles = async () => {
         next: { revalidate: 100 },
       }
     );
-    return await content_elements.json();
+    const res =  await content_elements.json();
+    console.log(res) 
+    return res;
   } catch (error) {
     console.error(error);
     return json(
