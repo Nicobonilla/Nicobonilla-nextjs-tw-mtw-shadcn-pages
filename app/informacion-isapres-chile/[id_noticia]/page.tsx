@@ -2,22 +2,9 @@
 import { Section } from "../../components/layout/Section";
 import ArticleLayout from "./ArticleLayout";
 import { Metadata, ResolvingMetadata } from "next";
+import { NextResponse } from "next/server";
 
-type Contenido = {
-  id: number;
-  article_id: string;
-  element_type: string;
-  content_order: number;
-  content: string | string[];
-  group_id?: number;
-};
-
-type Titles = {
-  id: number;
-  urlimg: string;
-  h1: string;
-  idnoticia: string;
-};
+const { json } = NextResponse;
 
 type Props = {
   params: {
@@ -55,12 +42,23 @@ export async function generateMetadata(
 // }
 
 async function getArticle(id_noticia : string) {
+  try{
   const response = await fetch(
     `${process.env.ROOT_URL_HOST}api/articles/${id_noticia}`
   );
   if (!response.ok) throw new Error("Network response was not ok.");
   return await response.json();
+} catch (error) {
+  console.error(error);
+  return json(
+    { error: "Internal Server Error" },
+    {
+      status: 500,
+    }
+  );
 }
+};
+
 
 // SERVER SIDE RENDER SSR
 export default async function Page({ params }: Props) {

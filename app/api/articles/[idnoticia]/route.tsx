@@ -1,12 +1,6 @@
 import conn from "../../../components/utils/postgresq_conn";
 import { NextRequest, NextResponse } from "next/server";
 
-type Article = {
-  id: number;
-  h1: string;
-  idnoticia: string;
-  urlimg: string;
-};
 // Utiliza la desestructuración para extraer métodos específicos de NextResponse
 const { json } = NextResponse;
 

@@ -3,17 +3,6 @@ import nodemailer from "nodemailer";
 import { render } from "@react-email/render";
 import Email from "../../templates/Email";
 
-type Article = {
-  nombre : string; 
-  rut : string;
-  edad : string;
-  celular : string;
-  comuna : string;
-  email : string;
-  rentaImponible : string;
-  comentario : string;
-}
-
 export async function POST(request: NextRequest) {
   const { nombre,
     rut,
@@ -23,7 +12,7 @@ export async function POST(request: NextRequest) {
     email,
     rentaImponible,
     comentario,
-  }  : Article = await request.json();
+  }  : Email = await request.json();
 
   const emailHtml = render(
     <Email

@@ -1,22 +1,6 @@
 "use server";
 import Image from "next/image";
 
-type Contenido = {
-  id: number;
-  article_id: string;
-  element_type: string;
-  content_order: number;
-  content: string | string[];
-  group_id?: number;
-};
-
-type Titles = {
-  id: number;
-  urlimg: string;
-  h1: string;
-  idnoticia: string;
-};
-
 type Props = {
   params: {
     data: { titles: Titles; content: Contenido[] };
