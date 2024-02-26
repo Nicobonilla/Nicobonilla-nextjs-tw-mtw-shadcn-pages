@@ -40,17 +40,19 @@ export async function generateMetadata(
     },
   };
 };
+
+// STATIC SITE GENERATION SSG
 // Return a list of `params` to populate the [slug] dynamic segment
-export async function generateStaticParams() {
-  const posts = await fetch(process.env.ROOT_URL_HOST+"api/resume_all_articles"
-  ).then((res) => res.json());
-  console.log(posts.map((article: Titles) => ({
-    id_noticia: article.idnoticia,
-  })));
-  return posts.map((article: Titles) => ({
-    id_noticia: article.idnoticia,
-  }));
-}
+// export async function generateStaticParams() {
+//   const posts = await fetch(process.env.ROOT_URL_HOST+"api/resume_all_articles"
+//   ).then((res) => res.json());
+//   console.log(posts.map((article: Titles) => ({
+//     id_noticia: article.idnoticia,
+//   })));
+//   return posts.map((article: Titles) => ({
+//     id_noticia: article.idnoticia,
+//   }));
+// }
 
 async function getArticle(id_noticia : string) {
   const response = await fetch(
@@ -60,6 +62,7 @@ async function getArticle(id_noticia : string) {
   return await response.json();
 }
 
+// SERVER SIDE RENDER SSR
 export default async function Page({ params }: Props) {
   const { id_noticia } = params;
   const data = await getArticle(id_noticia);
