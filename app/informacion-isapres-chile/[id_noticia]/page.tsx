@@ -50,12 +50,7 @@ async function getArticle(id_noticia: string) {
     return await response.json();
   } catch (error) {
     console.error(error);
-    return json(
-      { error: "Internal Server Error" },
-      {
-        status: 500,
-      }
-    );
+    return { error: "Internal Server Error", status: 500}
   }
 }
 
