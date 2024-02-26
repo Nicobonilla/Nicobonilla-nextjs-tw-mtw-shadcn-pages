@@ -41,7 +41,7 @@ export async function generateMetadata(
 //   }));
 // }
 
-export async function getArticle(id_noticia: string) {
+async function getArticle(id_noticia: string) {
   try {
     const response = await fetch(
       `${process.env.ROOT_URL_HOST}api/articles/${id_noticia}`
