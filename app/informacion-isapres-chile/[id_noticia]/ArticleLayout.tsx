@@ -2,13 +2,11 @@
 import Image from "next/image";
 
 type Props = {
-  params: {
-    data: { titles: Titles; content: Contenido[] };
-  };
+  params: { titles: Titles; content: Contenido[]}
 };
 
 export default async function ArticleLayout({ params }: Props) {
-  const { titles, content } = params.data;
+  const { titles, content } = params;
   const { h1, urlimg, idnoticia } = titles;
   return (
     <div>

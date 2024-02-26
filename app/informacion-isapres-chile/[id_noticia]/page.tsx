@@ -15,13 +15,13 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { data } = await getArticle(params.id_noticia);
+  const { titles } = await getArticle(params.id_noticia);
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || [];
   return {
-    title: await data.titles,
+    title: await titles.h1,
     openGraph: {
-      images: [data.titles.urlimg, ...previousImages],
+      images: [titles.urlimg, ...previousImages],
     },
   };
 }
@@ -42,7 +42,8 @@ export async function generateMetadata(
 async function getArticle(id_noticia: string) {
   try {
     const response = await fetch(
-      `${process.env.ROOT_URL_HOST}api/articles/${id_noticia}`
+      `${process.env.ROOT_URL_HOST}api/articles/${id_noticia}`,
+      { cache: "no-store" }
     );
     if (!response.ok) throw new Error("Network response was not ok.");
     return await response.json();

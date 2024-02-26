@@ -12,22 +12,24 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-async function getArticles(){
+async function getArticles() {
   try {
-    const response = await fetch(process.env.ROOT_URL_HOST + "api/resume_all_articles",  { cache: 'no-store' });
-    console.log('response')
-    console.log(response)
+    const response = await fetch(
+      process.env.ROOT_URL_HOST + "api/resume_all_articles",
+      { cache: "no-store" }
+    );
+    console.log("response");
+    console.log(response);
     if (!response.ok) throw new Error("Network response was not ok.");
     return await response.json();
   } catch (error) {
     console.error(error);
-    return { error: "Internal Server Error", status: 500}
+    return { error: "Internal Server Error", status: 500 };
   }
-};
+}
 
 export default async function Page() {
-  
-  const articles: Article[]= await getArticles();
+  const articles: Article[] = await getArticles();
   return (
     <>
       <Section>
@@ -46,7 +48,7 @@ export default async function Page() {
                 <InformacionIsapresChileItem
                   key={article.id}
                   title={article.h1}
-                  description={article.content ? article.content : ''}
+                  description={article.content ? article.content : ""}
                   idNoticia={article.idnoticia}
                   urlImg={article.urlimg}
                 />
