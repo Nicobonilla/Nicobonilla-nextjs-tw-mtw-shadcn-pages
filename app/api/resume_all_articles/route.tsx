@@ -8,6 +8,11 @@ export async function GET() {
   } catch (error) {
     console.error(error);
     // Handling any errors with a 500 Internal Server Error response
-    return { error: "Internal Server Error", status: 500 };
+    return new NextResponse(JSON.stringify({ error: "Internal Server Error" }), {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   }
 }

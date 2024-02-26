@@ -70,6 +70,11 @@ export async function POST(request: NextRequest) {
     return NextResponse.json( {status: 200 });
   } catch ( error) {
     console.error(error); // Registra el error en la consola
-    return  { error: "Internal Server Error", status: 500}
+    return  new NextResponse(JSON.stringify({ error: "Internal Server Error" }), {
+    status: 500,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
   }
 }
