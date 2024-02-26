@@ -14,14 +14,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 async function getArticles(){
   try {
-    const response = await fetch(
-      process.env.ROOT_URL_HOST + "api/resume_all_articles",
-      {
-        method: "GET",
-        headers: {"Content-Type": "application/json"},
-        next: { revalidate: 100 },
-      }
-    );
+    const response = await fetch(process.env.ROOT_URL_HOST + "api/resume_all_articles",  { cache: 'no-store' });
+    console.log('response')
+    console.log(response)
     if (!response.ok) throw new Error("Network response was not ok.");
     return await response.json();
   } catch (error) {

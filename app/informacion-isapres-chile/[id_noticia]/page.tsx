@@ -4,8 +4,6 @@ import ArticleLayout from "./ArticleLayout";
 import { Metadata, ResolvingMetadata } from "next";
 import { NextResponse } from "next/server";
 
-const { json } = NextResponse;
-
 type Props = {
   params: {
     id_noticia: string;
@@ -50,7 +48,12 @@ async function getArticle(id_noticia: string) {
     return await response.json();
   } catch (error) {
     console.error(error);
-    return { error: "Internal Server Error", status: 500}
+    return new NextResponse(JSON.stringify({ error: "Internal Server Error" }), {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   }
 }
 
