@@ -59,7 +59,7 @@ export default async function Page() {
                 <InformacionIsapresChileItem
                   key={article.id}
                   title={article.h1}
-                  description={article.content}
+                  description={article.content ? article.content : ''}
                   idNoticia={article.idnoticia}
                   urlImg={article.urlimg}
                 />
