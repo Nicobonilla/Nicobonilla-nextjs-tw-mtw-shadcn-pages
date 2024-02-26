@@ -8,22 +8,26 @@ export async function GET(req: NextRequest) {
 
   if (idnoticia) {
     try {
-      const article:Article[] = await conn`SELECT * FROM articles WHERE idnoticia = ${idnoticia};`;
+      const article: Article[] =
+        await conn`SELECT * FROM articles WHERE idnoticia = ${idnoticia};`;
       if (article) {
-        const content = await conn`SELECT * FROM content_elements WHERE article_id = ${article[0].id} ORDER BY content_order ASC;`
-        const fullArticle = { titles: article[0], content: content };
-        // Envía la respuesta como JSON con un estado 200
-        return NextResponse.json(
-          { data: fullArticle },
-          {
-            status: 200,
-          }
-        );
+        const content =
+          await conn`SELECT * FROM content_elements WHERE article_id = ${article[0].id} ORDER BY content_order ASC;`;
+        if (content) {
+          const fullArticle = { titles: article[0], content: content };
+          // Envía la respuesta como JSON con un estado 200
+          return NextResponse.json(fullArticle);
+        }
       }
     } catch (error) {
       console.error(error);
       // Manejo de errores con un estado 500
-      return { error: "Internal Server Error", status: 500}
+      return new NextResponse(JSON.stringify({ error: "Internal Server Error" }), {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
     }
   }
 }
