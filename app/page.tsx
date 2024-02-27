@@ -1,18 +1,26 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import HeroOneButton from "./components/hero/HeroOneButton";
 import { Button } from "./components/button/Button";
-import CarouselHero from "./components/carousel/CarouselHero";
-import CarouselIsapres from "./components/carousel/CarouselIsapres";
-import ContactForm from "./templates/ContactForm";
+import dynamic from 'next/dynamic';
+import CarouselHeroItem from './components/carousel/CarouselHeroItemLoading';
 
-export default function Page() {
-  // El arreglo vacío asegura que este efecto se ejecute solo una vez
+
+export default async function Page() {
+  const DyCarouselHero = dynamic(() => import("./components/carousel/CarouselHero"), {
+    ssr: false,
+    loading: ()=> (<CarouselHeroItem image={"/images/family-1.jpg"}/>)
+  })
+
+  const DyCarouselIsapres = dynamic(() => import("./components/carousel/CarouselIsapres"), {
+    ssr: false});
+    
+  const DyContactForm = dynamic(() => import("./templates/ContactForm"), {
+    ssr: false});
+  
   return (
     <div className="flex flex-col items-center justify-center">
-      <CarouselHero />
-
+      <DyCarouselHero />
       <HeroOneButton
         title={
           <>
@@ -42,16 +50,16 @@ export default function Page() {
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center items-center">
-        <CarouselIsapres />
+        <DyCarouselIsapres />
       </div>
 
       <div
         id="contacto-ejecutiva-isapre"
         className="flex justify-center items-center"
       >
-        <ContactForm />
+        <DyContactForm />
       </div>
 
       <div className="m-3">

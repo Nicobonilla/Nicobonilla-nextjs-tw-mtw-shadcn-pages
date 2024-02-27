@@ -96,7 +96,7 @@ const Footer = ( ) => {
           { 
           // ((!pathname) || (pathname == "informacion-isapres-chile" && id_noticia)) && (
             <li className="mx-5">
-              <Link href="/informacion-isapres-chile">Boletín</Link>
+              <Link href="/informacion-isapres-chile">Noticias</Link>
             </li>
           // )
           }
