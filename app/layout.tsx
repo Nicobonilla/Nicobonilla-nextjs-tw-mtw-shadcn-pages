@@ -6,7 +6,7 @@ import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
 import JsonLdHome from "./components/jsonLd/JsonLdHome";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -51,8 +51,8 @@ export default function RootLayout({
           <Footer />
         </JsonLdHome>
       </body>
-      <GoogleAnalytics gaId="AW-16476061340" />
-      <GoogleAnalytics gaId="G-NC42K5VRBP" />
+      <GoogleTagManager gtmId="AW-16476061340" />
+      <GoogleTagManager gtmId="G-NC42K5VRBP" />
     </html>
   );
 }
