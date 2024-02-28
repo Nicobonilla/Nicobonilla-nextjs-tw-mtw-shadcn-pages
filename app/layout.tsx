@@ -52,6 +52,7 @@ export default function RootLayout({
         </JsonLdHome>
       </body>
       <GoogleAnalytics gaId="AW-16476061340" />
+      <GoogleAnalytics gaId="G-NC42K5VRBP" />
     </html>
   );
 }
