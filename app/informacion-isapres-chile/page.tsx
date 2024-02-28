@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export async function getArticles() {
+async function getArticles() {
   try {
     const response = await fetch(
       process.env.ROOT_URL_HOST + "api/resume_all_articles",
