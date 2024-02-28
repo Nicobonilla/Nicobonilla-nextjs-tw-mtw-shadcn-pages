@@ -6,7 +6,8 @@ import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
 import JsonLdHome from "./components/jsonLd/JsonLdHome";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://www.redisapres.cl'),
+  metadataBase: new URL("http://www.redisapres.cl"),
   title: {
     absolute: "RED ISAPRES | ATENCIÓN PERSONALIZADA",
     template: "%s  |  Red Isapres",
@@ -50,8 +51,10 @@ export default function RootLayout({
           </div>
           <Footer />
         </JsonLdHome>
+        <Analytics />
       </body>
       <GoogleTagManager gtmId="AW-16476061340" />
+      <GoogleTagManager gtmId="GT-5R7PHS57" />
       <GoogleTagManager gtmId="G-NC42K5VRBP" />
     </html>
   );
