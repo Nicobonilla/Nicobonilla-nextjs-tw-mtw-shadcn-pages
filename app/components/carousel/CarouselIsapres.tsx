@@ -30,7 +30,7 @@ export default function CarouselIsapres ({plugins} : Props) {
         {Array.from({ length: 6 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className="md:basis-1/3 lg:basis-1/4 w-full xl:w-1/2"
+            className="basis-1/2 md:basis-1/3 lg:basis-1/4 w-full xl:w-1/2"
           >
             <Card>
               <CardContent className="xl:h-1/12 items-center pt-5">

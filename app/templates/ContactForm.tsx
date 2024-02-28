@@ -90,17 +90,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <header className="grid-2 text-center">
-        <h1
-          color="gray"
-          className="mb-5 mt-4 text-2xl md:text-4xl text-primary-600"
-        >
-          Déjanos tus datos y te contactaremos para ayudarte a cotizar Planes de
-          ISAPRE
-        </h1>
-      </header>
-
-      <section className="flex justify-center items-center w-full">
+        <section className="flex justify-center items-center w-full">
         <form onSubmit={handleSubmit} className="w-full max-w-xl p-5">
           <div className="flex flex-wrap w-full ">
             {/* Nombre Completo - Ocupa todo el ancho */}

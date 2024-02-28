@@ -4,7 +4,7 @@ import HeroOneButton from "./components/hero/HeroOneButton";
 import { Button } from "./components/button/Button";
 import dynamic from 'next/dynamic';
 import CarouselHeroItem from './components/carousel/CarouselHeroItemLoading';
-
+import VerticalFeatures from './templates/VerticalFeatures';
 
 export default async function Page() {
   const DyCarouselHero = dynamic(() => import("./components/carousel/CarouselHero"), {
@@ -51,14 +51,28 @@ export default async function Page() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center pb-14">
         <DyCarouselIsapres />
       </div>
+      
+      <h1 className="whitespace-pre-line px-1 text-2xl md:text-3xl lg:text-4xl text-center font-bold leading-hero text-gray-900 pb-5">
+      Tipos de Planes de ISAPRES
+    </h1>
+      <VerticalFeatures/>
 
       <div
         id="contacto-ejecutiva-isapre"
-        className="flex justify-center items-center"
+        className="justify-center items-center"
       >
+      <header className="grid-2 text-center">
+        <h1
+          color="gray"
+          className="mb-5 mt-4 text-2xl md:text-4xl xl:px-32 text-primary-600 pt-12 md:pt-20"
+        >
+          Déjanos tus datos y te contactaremos para ayudarte a cotizar Planes de
+          ISAPRE
+        </h1>
+      </header>
         <DyContactForm />
       </div>
 
