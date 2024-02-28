@@ -2,6 +2,7 @@
 import { InformacionIsapresChileItem } from "./InformacionIsapresChileItem";
 import { Section } from "../components/layout/Section";
 import { Metadata } from "next";
+import { NextResponse } from "next/server";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -18,13 +19,19 @@ async function getArticles() {
       process.env.ROOT_URL_HOST + "api/resume_all_articles",
       { cache: "no-store" }
     );
-    console.log("response");
-    console.log(response);
     if (!response.ok) throw new Error("Network response was not ok.");
     return await response.json();
   } catch (error) {
     console.error(error);
-    return { error: "Internal Server Error", status: 500 };
+    return new NextResponse(
+      JSON.stringify({ error: "Internal Server Error" }),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
   }
 }
 
