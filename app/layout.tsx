@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import JsonLdHome from "./components/jsonLd/JsonLdHome";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -52,11 +53,9 @@ export default function RootLayout({
           <Footer />
         </JsonLdHome>
         <Analytics />
+        <SpeedInsights/>
       </body>
-      <GoogleTagManager gtmId="AW-16476061340" />
-      <GoogleTagManager gtmId="GT-5R7PHS57" />
-      <GoogleTagManager gtmId="G-BEKNHHV8QB" />
-      <GoogleTagManager gtmId="GTM-NK276HT6" />
+      <GoogleTagManager gtmId={process.env.GTM_ID ? process.env.GTM_ID:''} />
     </html>
   );
 }

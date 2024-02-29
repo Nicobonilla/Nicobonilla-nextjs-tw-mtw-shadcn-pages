@@ -1,6 +1,7 @@
 import { Typography, Button } from "@material-tailwind/react";
 import imageByIndex from "./imageByIndex";
 import Image from "next/image";
+import Link from "next/link";
 
 type ICarouselHeroItemIsapre = {
   title: string;
@@ -43,18 +44,12 @@ export default function CarouselHeroItemIsapre({
           >
             {description}
           </Typography>
-          <div className="flex gap-2">
-            <Button size="lg" color="white" placeholder={"place"}>
-              Explore
-            </Button>
-            <Button
-              placeholder={"place"}
-              size="lg"
-              color="white"
-              variant="text"
-            >
-              Gallery
-            </Button>
+          <div className="flex justify-start gap-2">
+            <Link href="/#contacto-ejecutiva-isapre">
+              <Button placeholder={"Cotiza"} size="lg" color="white">
+                COTIZA GRATIS TU PLAN DE SALUD
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
