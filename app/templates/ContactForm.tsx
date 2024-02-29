@@ -234,8 +234,8 @@ export default function ContactForm() {
                 className="px-4 py-2 w-full rounded border border-gray-500"
               />
             </div>
-            <div className="w-full justify-center items-center cursor-pointer">
-              <Button xl type='submit' >
+            <div className="w-full justify-center items-center">
+              <Button form type='submit' >
                 COTIZAR GRATIS{" "}
               </Button>
             </div>

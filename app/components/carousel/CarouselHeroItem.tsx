@@ -28,7 +28,7 @@ export default function CarouselHeroItem({
         priority
       />
       <div className="absolute inset-0 grid h-[70vh] w-full place-items-center bg-black/60">
-        <div className="w-3/4  lg:w-1/3 text-center pt-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pb-32">
+        <div className="w-3/4  lg:w-1/2 text-center pt-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pb-32">
           <Typography
             placeholder={"titulo"}
             variant="h1"

@@ -1,27 +1,22 @@
-import classNames from 'classnames';
 
 type IButtonProps = {
-  xl?: boolean;
   children: React.ReactNode;
   onClick?: () => void | Promise<string>;
   type?: "submit" | "button" | "reset"; // Add type prop
+  banner?:boolean;
+  form?:boolean;
 };
 
-const Button = ({ xl, children, onClick, type = "button" }: IButtonProps) => {
-  const btnClass = classNames(
-    'mt-6 w-full inline-block rounded-md text-center text-white bg-primary-500 hover:bg-primary-600',
-    {
-      'text-lg font-semibold py-2 px-4': !xl,
-      'font-extrabold text-xl py-4 px-6': xl,
-    }
-  );
-
+const Button = ({ banner, form, children, onClick, type = "button" }: IButtonProps) => {
+  const banner_button = banner ? 'md:py-6 mx-2':'';
+  const form_button = form ? 'w-full':'max-w-sm ';
   return (
-    // Change to button element and pass the type prop
-    <button type={type} className={btnClass} onClick={onClick}>
+<>
+    <button type={type} 
+    className={`inline-block rounded-md text-center text-white bg-primary-500 hover:bg-primary-600 text-xl my-2 py-2 px-6 cursor-pointer ${banner_button}  ${form_button}`}
+    onClick={onClick}>
       {children}
     </button>
-  );
+  </>);
 };
-
 export { Button };

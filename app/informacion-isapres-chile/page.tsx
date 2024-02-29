@@ -3,6 +3,7 @@ import { InformacionIsapresChileItem } from "./InformacionIsapresChileItem";
 import { Section } from "../components/layout/Section";
 import { Metadata } from "next";
 import { NextResponse } from "next/server";
+import { Banner } from "../templates/Banner";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -40,8 +41,9 @@ export default async function Page() {
   return (
     <>
       <Section>
+        <Banner/>
         <section className="md:h-full flex items-center text-gray-600">
-          <div className="container grid px-5 py-24 mx-auto">
+          <div className="container grid px-5 pb-24 mx-auto">
             <div className="text-center mb-12">
               <h5 className="text-base md:text-lg text-indigo-700 mb-1">
                 Revisa Nuestras Noticias Recientes

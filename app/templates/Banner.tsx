@@ -11,7 +11,7 @@ const Banner = () => (
       subtitle="Te podemos ayudar"
       button={
         <Link href="/#contacto-ejecutiva-isapre">
-          <Button>Quiero cotizar</Button>
+          <Button banner>QUIERO COTIZAR</Button>
         </Link>
       }
     />

@@ -32,7 +32,7 @@ export default async function Page() {
         button={
           <div className="px-10">
             <Link href="/#contacto-ejecutiva-isapre">
-              <Button xl>COTIZA GRATIS TU PLAN DE SALUD</Button>
+              <Button >COTIZA GRATIS TU PLAN DE SALUD</Button>
             </Link>
           </div>
         }
@@ -77,8 +77,8 @@ export default async function Page() {
       </div>
 
       <div className="m-3">
-        <div className="flex flex-col rounded-md bg-primary-100 p-4 text-center sm:flex-row sm:items-center sm:justify-between sm:p-12 sm:text-left">
-          <div className="text-2xl font-semibold">
+        <div className="flex flex-col rounded-md bg-primary-100 p-4 text-center sm:flex-row sm:justify-between sm:p-12 sm:text-left">
+          <div className="text-2xl font-semibold text-center">
             <div className="text-gray-900">
               Somos agentes de venta de ISAPRES con experiencia
             </div>
