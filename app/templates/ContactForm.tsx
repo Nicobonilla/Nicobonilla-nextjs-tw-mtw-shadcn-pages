@@ -91,7 +91,7 @@ export default function ContactForm() {
   return (
     <div>
         <section className="flex justify-center items-center w-full">
-        <form onSubmit={handleSubmit} className="w-full max-w-xl p-5">
+        <form id="the_form" onSubmit={handleSubmit} className="w-full max-w-xl p-5">
           <div className="flex flex-wrap w-full ">
             {/* Nombre Completo - Ocupa todo el ancho */}
             <div className="w-full">
