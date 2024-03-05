@@ -82,7 +82,7 @@ export default function ContactForm() {
       sendEmail(formulario);
       setSubmitted(false);
       setFormulario(iniForm);
-      router.push("/");
+      router.push("/thanks_page");
     } else {
       setErrorSubmit(true);
     }
@@ -92,7 +92,7 @@ export default function ContactForm() {
     <div>
         <section className="flex justify-center items-center w-full">
         <form id="the_form" onSubmit={handleSubmit} className="w-full max-w-xl p-5">
-          <div className="flex flex-wrap w-full ">
+          <div className="flex flex-wrap w-full">
             {/* Nombre Completo - Ocupa todo el ancho */}
             <div className="w-full">
               <label className="text-gray-500 mt-2 text-xs">Nombre Completo</label>
